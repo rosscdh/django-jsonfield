@@ -1,5 +1,5 @@
 from django import forms
-from django.utils import simplejson as json
+import json
 from django.conf import settings
 
 from .utils import default

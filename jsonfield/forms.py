@@ -1,5 +1,5 @@
 from django import forms
-from django.utils import simplejson as json
+import json
 
 from .widgets import JSONWidget
 

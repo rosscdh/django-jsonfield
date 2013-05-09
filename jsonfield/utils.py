@@ -9,6 +9,7 @@ class TZAwareJSONEncoder(DjangoJSONEncoder):
             return obj.strftime("%Y-%m-%d %H:%M:%S%z")
         return super(TZAwareJSONEncoder, self).default(obj)
 
+
 def default(o):
     if hasattr(o, 'to_json'):
         return o.to_json()
